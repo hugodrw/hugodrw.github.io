@@ -1,0 +1,70 @@
+
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+// Create Title
+var title = document.createElement('div');
+title.innerHTML = 'hugodrw';
+title.style.fontFamily = 'futura';
+document.body.appendChild(title);
+title.style.position = 'fixed';
+title.style.top = '0';
+title.style.left = '0';
+title.style.color = 'black';
+title.style.padding = '40px';
+title.style.fontSize = '40px';
+
+// Animate title hover
+title.onmouseover = function() {
+    title.style.opacity  = '0.7';
+};
+
+title.onmouseout = function() {
+    title.style.opacity  = '1';
+};
+
+// Go home on click
+title.addEventListener('click', function(event) {
+    goHome();
+});
+
+function goHome(){
+    window.location.href = 'https://hugodrw.com/';
+}
+  
+
+/* add a white square */
+var square = document.createElement('div');
+square.style.height = '160%';
+square.style.backgroundColor = 'white';
+document.body.appendChild(square);
+
+var video = document.createElement('video');
+video.src = 'MLProject.m4v';
+video.style.height = '80%';
+video.autoplay = true;
+video.loop = true;
+video.style.position = 'fixed';
+video.style.left = '50%';
+video.style.top = '50%';
+video.style.transform = 'translate(-50%, -50%)';
+document.body.appendChild(video);
+
+var img = document.createElement('img');
+img.src = 'Abstract.png';
+img.style.height = '110%';
+img.style.position = 'absolute';
+img.style.left = '50%';
+img.style.top = '80%';
+img.style.transform = 'translate(-50%, -0%)';
+document.body.appendChild(img);
+
+img.addEventListener('click', function() {
+    window.location.href = 'https://www.researchgate.net/publication/356260138_Undergraduate_Research_Project_Machine_Learning_for_Robotic_Resilience';
+});
+});
+        </script>
+    </head>
+</html>

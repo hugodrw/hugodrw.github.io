@@ -1,0 +1,251 @@
+
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+document.body.style.backgroundColor = 'black';
+
+var imgList = [];
+
+
+// Helper function to add images
+function addImage(src){
+    var img1 = document.createElement('img');
+    img1.src = src;
+    document.body.appendChild(img1);
+    img1.style.width = '100%';
+    img1.style.transition = 'opacity 1s';
+    img1.style.opacity  = '0';
+    img1.style.position = 'absolute';
+    img1.style.left = 0;
+    img1.style.top = 0;
+    imgList.push(img1);
+}
+
+// Helper function to add titles
+function addTitle(title){
+    var listItem = document.createElement('li');
+    listItem.innerHTML = title;
+    list.appendChild(listItem);
+}
+
+// Add images here
+addImage('PhotoPagePictures/Rebei.jpg');
+addImage('PhotoPagePictures/Cavo.jpg');
+addImage('PhotoPagePictures/Alps-Summer.jpg');
+addImage('PhotoPagePictures/Alps-Winter.jpg');
+addImage('PhotoPagePictures/London.jpg');
+addImage('PhotoPagePictures/NYC.jpg');
+addImage('PhotoPagePictures/Bath.jpg');
+addImage('PhotoPagePictures/Goodwood.jpg');
+addImage('PhotoPagePictures/Milan.jpg');
+addImage('PhotoPagePictures/Rob.jpg');
+
+
+// Create Title
+var title = document.createElement('div');
+title.innerHTML = 'hugodrw';
+title.style.fontFamily = 'futura';
+document.body.appendChild(title);
+title.style.position = 'fixed';
+title.style.top = '0';
+title.style.left = '0';
+title.style.color = 'white';
+title.style.padding = '40px';
+title.style.fontSize = '40px';
+
+// Animate title hover
+title.onmouseover = function() {
+    title.style.opacity  = '0.7';
+};
+
+title.onmouseout = function() {
+    title.style.opacity  = '1';
+};
+
+// Go home on click
+title.addEventListener('click', function(event) {
+    goHome();
+});
+
+
+
+// Create Folder List
+var list = document.createElement('ul');
+list.style.listStyleType = 'none';
+list.style.right = '12%';
+list.style.marginTop = '-10%';
+list.style.position = 'absolute';
+list.style.top = '30%';
+list.style.padding = '10px';
+list.style.fontSize = '40px';
+list.style.lineHeight = '80px';
+list.style.fontFamily = 'garamond';
+list.style.color = 'white';
+document.body.appendChild(list);
+
+// Make a helper function that adds titles
+function addTitle(title){
+    var listItem = document.createElement('li');
+    listItem.innerHTML = title;
+    list.appendChild(listItem);
+}
+
+// Add titles here
+addTitle('Mont Rebei');
+addTitle('Carvoeiro');
+addTitle('Alps - Summer');
+addTitle('Alps - Winter');
+addTitle('London');
+addTitle('New York City');
+addTitle('Bath');
+addTitle('Goodwood');
+addTitle('Milan');
+addTitle('Rob');
+
+
+// Img1 Animation
+list.children[0].onmouseover = function() {
+    imgList[0].style.opacity  = '1';
+};
+  
+list.children[0].onmouseout = function() {
+    imgList[0].style.opacity  = '0';
+};
+
+list.children[0].addEventListener('click', function() {
+    window.location.href = 'Rebei/Rebei.html';
+});
+
+// Img2 Animation
+list.children[1].onmouseover = function() {
+    imgList[1].style.opacity  = '1';
+};
+  
+list.children[1].onmouseout = function() {
+    imgList[1].style.opacity  = '0';
+};
+
+list.children[1].addEventListener('click', function() {
+    window.location.href = 'Cavo/Cavo.html';
+});
+
+// Img3 Animation
+list.children[2].onmouseover = function() {
+    imgList[2].style.opacity  = '1';
+};
+  
+list.children[2].onmouseout = function() {
+    imgList[2].style.opacity  = '0';
+};
+
+list.children[2].addEventListener('click', function() {
+    window.location.href = 'Alps-Summer/Alps-Summer.html';
+});
+
+// Img4 Animation
+list.children[3].onmouseover = function() {
+    imgList[3].style.opacity  = '1';
+};
+  
+list.children[3].onmouseout = function() {
+    imgList[3].style.opacity  = '0';
+};
+
+list.children[3].addEventListener('click', function() {
+    window.location.href = 'Alps-Winter/Alps-Winter.html';
+});
+
+// Img5 Animation
+list.children[4].onmouseover = function() {
+    imgList[4].style.opacity  = '1';
+};
+  
+list.children[4].onmouseout = function() {
+    imgList[4].style.opacity  = '0';
+};
+
+list.children[4].addEventListener('click', function() {
+    window.location.href = 'London/London.html';
+});
+
+// Img6 Animation
+list.children[5].onmouseover = function() {
+    imgList[5].style.opacity  = '1';
+};
+  
+list.children[5].onmouseout = function() {
+    imgList[5].style.opacity  = '0';
+};
+
+list.children[5].addEventListener('click', function() {
+    window.location.href = 'NYC/NYC.html';
+});
+
+// Img7 Animation
+list.children[6].onmouseover = function() {
+    imgList[6].style.opacity  = '1';
+};
+  
+list.children[6].onmouseout = function() {
+    imgList[6].style.opacity  = '0';
+};
+
+list.children[6].addEventListener('click', function() {
+    window.location.href = 'Bath/Bath.html';
+});
+
+// Img8 Animation
+list.children[7].onmouseover = function() {
+    imgList[7].style.opacity  = '1';
+};
+  
+list.children[7].onmouseout = function() {
+    imgList[7].style.opacity  = '0';
+};
+
+list.children[7].addEventListener('click', function() {
+    window.location.href = 'Goodwood/Goodwood.html';
+});
+
+// Img9 Animation
+list.children[8].onmouseover = function() {
+    imgList[8].style.opacity  = '1';
+};
+  
+list.children[8].onmouseout = function() {
+    imgList[8].style.opacity  = '0';
+};
+
+list.children[8].addEventListener('click', function() {
+    window.location.href = 'Milan/Milan.html';
+});
+
+// Img10 Animation
+list.children[9].onmouseover = function() {
+    imgList[9].style.opacity  = '1';
+};
+  
+list.children[9].onmouseout = function() {
+    imgList[9].style.opacity  = '0';
+};
+
+list.children[9].addEventListener('click', function() {
+    window.location.href = 'Rob/Rob.html';
+});
+
+
+function goHome(){
+    window.location.href = 'https://hugodrw.com/';
+}
+  
+
+  
+
+});
+
+        </script>
+    </head>
+    
+</html>
