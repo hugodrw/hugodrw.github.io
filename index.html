@@ -74,8 +74,14 @@ listItem = document.createElement('li');
 listItem.innerHTML = 'About this site';
 list.appendChild(listItem);
 listItem = document.createElement('li');
-listItem.innerHTML = 'Connect';
+listItem.innerHTML = 'Connect               ';
 list.appendChild(listItem);
+
+// Create logo
+var logo = document.createElement('img');
+logo.src = 'link.png';
+logo.style.height = list.children[3].offsetHeight/3.5;
+list.children[3].appendChild(logo);
 
 
 // Img1 Animation
