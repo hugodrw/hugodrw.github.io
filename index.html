@@ -36,6 +36,16 @@ img3.style.position = 'absolute';
 img3.style.left = 0;
 img3.style.top = 0;
 
+// Create img4
+var img4 = document.createElement('img');
+img4.src = 'FrontPagePictures/Connect.jpg';
+document.body.appendChild(img4);
+img4.style.width = '100%';
+img4.style.transition = 'opacity 1s';
+img4.style.opacity  = '0';
+img4.style.position = 'absolute';
+img4.style.left = 0;
+img4.style.top = 0;
 
 
 // Create Title
@@ -44,6 +54,7 @@ title.innerHTML = 'hugodrw';
 title.style.fontFamily = 'futura';
 document.body.appendChild(title);
 title.style.position = 'absolute';
+title.style.cursor = 'pointer';
 title.style.top = '0';
 title.style.left = '0';
 title.style.color = 'white';
@@ -54,7 +65,8 @@ title.style.fontSize = '40px';
 // Create List
 var list = document.createElement('ul');
 list.style.listStyleType = 'none';
-list.style.right = '12%';
+list.style.cursor = 'pointer';
+list.style.left = '70%';
 list.style.marginTop = '-10%';
 list.style.position = 'absolute';
 list.style.top = '50%';
@@ -86,11 +98,13 @@ list.children[3].appendChild(logo);
 
 // Img1 Animation
 list.children[0].onmouseover = function() {
+    list.children[0].style.fontWeight = 'bold';
     img1.style.opacity  = '1';
 };
   
 list.children[0].onmouseout = function() {
     img1.style.opacity  = '0';
+    list.children[0].style.fontWeight = 'normal';
 };
 
 list.children[0].addEventListener('click', function() {
@@ -99,11 +113,13 @@ list.children[0].addEventListener('click', function() {
 
 // Img2 Animation
 list.children[1].onmouseover = function() {
+    list.children[1].style.fontWeight = 'bold';
     img2.style.opacity  = '1';
 };
   
 list.children[1].onmouseout = function() {
     img2.style.opacity  = '0';
+    list.children[1].style.fontWeight = 'normal';
 };
 
 list.children[1].addEventListener('click', function() {
@@ -112,11 +128,13 @@ list.children[1].addEventListener('click', function() {
 
 // Img3 Animation
 list.children[2].onmouseover = function() {
+    list.children[2].style.fontWeight = 'bold';
     img3.style.opacity  = '1';
 };
   
 list.children[2].onmouseout = function() {
     img3.style.opacity  = '0';
+    list.children[2].style.fontWeight = 'normal';
 };
 
 list.children[2].addEventListener('click', function() {
@@ -124,6 +142,16 @@ list.children[2].addEventListener('click', function() {
 });
 
 // Connect
+list.children[3].onmouseover = function() {
+    list.children[3].style.fontWeight = 'bold';
+    img4.style.opacity  = '1';
+};
+  
+list.children[3].onmouseout = function() {
+    list.children[3].style.fontWeight = 'normal';
+    img4.style.opacity  = '0';
+};
+
 list.children[3].addEventListener('click', function() {
     window.location.href = 'https://www.linkedin.com/in/hugo-de-rohan-willner-a64976165/';
 });

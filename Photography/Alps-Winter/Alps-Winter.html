@@ -52,6 +52,7 @@
     function addImage(i) {
         var image = document.createElement('img');
         image.src = i + '.jpeg';
+        image.style.cursor = 'pointer';
         if(i%2 == 0){
             column1.appendChild(image);
         }
